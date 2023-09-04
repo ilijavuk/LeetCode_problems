@@ -24,6 +24,7 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
  */
 
 function isAnagram(s: string, t: string): boolean {
+    if(s.length !== t.length) return false;
     const tArray = Array.from(t);
     for(let i = 0; i < s.length; i++) {
         const charIndexInT = tArray.findIndex(tChar => tChar == s[i]);
