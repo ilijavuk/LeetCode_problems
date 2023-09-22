@@ -55,7 +55,7 @@ function trap(height: number[]): number {
     }
 };
 
-/* Second Version - 70 ms (46.26%) | 45.7MB (34.43%) */
+/* Second Version - 70ms (46.26%) | 45.7MB (34.43%) */
 function trap(height: number[]): number {
     const minLeftRight = new Array(height.length).fill(0);
     let sum = 0;
@@ -72,7 +72,7 @@ function trap(height: number[]): number {
     return sum;
 };
 
-/* Third Version - 68 ms (52.17%) | 45.4MB (49.93%) */
+/* Third Version - 68ms (52.17%) | 45.4MB (49.93%) */
 function trap(height: number[]): number {
     let sum = 0;
     let l = 0, r = height.length-1;
